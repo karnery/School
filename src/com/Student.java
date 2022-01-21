@@ -45,7 +45,8 @@ class School {
             System.out.println(currentGrade.subjectName + ": " + currentGrade.score);
         }
     }
-    public void showScoreBySubjectName (String subjectName){
+
+    public void showScoreBySubjectName(String subjectName) {
         for (int i = 0; i <= students.length - 1; i++) {
             Student currentStudent = students[i];
             Grade[] grades = currentStudent.grades;
@@ -58,6 +59,7 @@ class School {
         }
     }
 }
+
 class Main {
     public static void main(String[] args) {
         Student[] students = new Student[2];
@@ -77,6 +79,6 @@ class Main {
 
         school.showScoreByStudentName("маКс");
 
-      school.showScoreBySubjectName("Английский язык");
+        school.showScoreBySubjectName("Английский язык");
     }
 }

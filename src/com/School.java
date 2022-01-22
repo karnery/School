@@ -37,4 +37,25 @@ class School {
             }
         }
     }
+
+    public void showAverageScoreByStudentName(String name) {
+        for (int i = 0; i <= students.length - 1; i++) {
+            Student currentStudent = students[i];
+            if (currentStudent.name.equalsIgnoreCase(name)) {
+                System.out.println("Выведен средний балл студента " + currentStudent.name);
+                showAverageScore(currentStudent);
+            }
+        }
+    }
+
+    private void showAverageScore(Student student) {
+        Grade[] grades = student.grades;
+        double sumScore = 0;
+        for (int i = 0; i < grades.length; i++) {
+            Grade sumGrade = grades[i];
+            sumScore += sumGrade.score;
+        }
+        double avg = sumScore / grades.length;
+        System.out.println(avg);
+    }
 }

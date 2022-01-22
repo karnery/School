@@ -1,6 +1,6 @@
 package com;
 
-class Student {
+public class Student {
     String name;
     Grade[] grades;
 

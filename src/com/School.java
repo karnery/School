@@ -58,4 +58,14 @@ class School {
         double avg = sumScore / grades.length;
         System.out.println(avg);
     }
+
+    // public Grade[] getGrades() {
+    //   Grade [] grades = new Grade[];
+    //  for (int i = 0; i <= students.length - 1; i++) {
+    //       Student currentStudent = students[i];
+    //      grades [i] = currentStudent.;
 }
+//  return
+
+
+// вывести список всех предметов

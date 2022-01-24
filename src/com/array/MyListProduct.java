@@ -1,10 +1,15 @@
 package com.array;
 
 public class MyListProduct {
-    private Product[] allProduct = new Product[1];
+    private Product[] allProduct = new Product[5];
     private int currentIndex = 0;
 
     public void add(Product product) {
+        if (currentIndex >= allProduct.length) {
+            reCreateArray();
+        }
+        allProduct[currentIndex] = product;
+        currentIndex = currentIndex + 1;
     }
 
     public Product[] getAllProduct() {
@@ -19,3 +24,4 @@ public class MyListProduct {
         }
     }
 }
+// проверить есть ли место в массиве аллпродакт (if) если каррент индекс больше текущего массива, тогда вызываем метод реКреат,

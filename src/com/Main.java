@@ -5,7 +5,7 @@ class Main {
         Student[] students = new Student[2];
 
         Grade[] mashaGrades = new Grade[2];
-        mashaGrades[0] = new Grade("Физика", 4);
+        mashaGrades[0] = new Grade("Французкий", 4);
         mashaGrades[1] = new Grade("Английский язык", 4);
         students[0] = new Student("Маша", mashaGrades);
 

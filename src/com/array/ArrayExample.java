@@ -34,9 +34,9 @@ class ArrayExample {
         users[1] = new User(userSecondProducts);
 
         Product[] allProduct = getAllProducts(users);
-        for (int i = 1; i < allProduct.length; i++) {
+        for (int i = 0; i < allProduct.length; i++) {
             Product currentProduct = allProduct[i];
-            System.out.println(i + ". " + currentProduct.name);
+            System.out.println(i + 1 + ". " + currentProduct.name);
         }
     }
 

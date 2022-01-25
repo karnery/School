@@ -1,7 +1,7 @@
 package com.array;
 
 public class MyListProduct {
-    private Product[] allProduct = new Product[5];
+    private Product[] allProduct = new Product[1];
     private int currentIndex = 0;
 
     public void add(Product product) {

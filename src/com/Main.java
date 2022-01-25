@@ -13,7 +13,7 @@ class Main {
         maxGrades[0] = new Grade("Биология", 5);
         maxGrades[1] = new Grade("Английский язык", 4);
         maxGrades[2] = new Grade("Физкультура", 3);
-        maxGrades[3] = new Grade("Химия", 5);
+        maxGrades[3] = new Grade("Астрономия", 5);
         students[1] = new Student("Макс", maxGrades);
 
 

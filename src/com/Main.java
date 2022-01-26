@@ -4,9 +4,10 @@ class Main {
     public static void main(String[] args) {
         Student[] students = new Student[2];
 
-        Grade[] mashaGrades = new Grade[2];
+        Grade[] mashaGrades = new Grade[3];
         mashaGrades[0] = new Grade("Французкий", 4);
         mashaGrades[1] = new Grade("Английский язык", 4);
+        mashaGrades[2] = new Grade("Алгебра", 4);
         students[0] = new Student("Маша", mashaGrades);
 
         Grade[] maxGrades = new Grade[4];
@@ -22,6 +23,8 @@ class Main {
             Grade currentGrade = allGrades[i];
             System.out.println(i + 1 + ". " + currentGrade.subjectName);
         }
+
+
         //School school = new School(students);
 
         //school.showScoreByStudentName("маКс");

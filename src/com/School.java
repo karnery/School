@@ -59,13 +59,19 @@ class School {
         System.out.println(avg);
     }
 
-    // public Grade[] getGrades() {
-    //   Grade [] grades = new Grade[];
-    //  for (int i = 0; i <= students.length - 1; i++) {
-    //       Student currentStudent = students[i];
-    //      grades [i] = currentStudent.;
+    public Grade[] getAllGrades() {
+        ListGrades listGrades = new ListGrades();
+        for (int i = 0; i < students.length; i++) {
+            Student currentStudent = students[i];
+            for (int a = 0; a < currentStudent.grades.length; a++) {
+                Grade currentGrade = currentStudent.grades[a];
+                listGrades.add(currentGrade);
+            }
+        }
+        return listGrades.getAllGrades();
+    }
+    //   Grade[] allGrades = getAllGrades(students);
+    //       for (int i = 0; i < allGrades.length; i++) {
+    //       Grade currentGrade = allGrades[i];
+    //       System.out.println(i + 1 + ". " + currentGrade.subjectName);
 }
-//  return
-
-
-// вывести список всех предметов

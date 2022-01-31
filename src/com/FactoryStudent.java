@@ -29,12 +29,12 @@ public class FactoryStudent {
         return new Grade(getRandomSubject(), getRandomScore());
     }
 
-    String getRandomName() {
-        int n = (int) Math.floor(Math.random() * names.length);
-        return names[n];
-    }
+   private String getRandomName() {
+       int n = (int) Math.floor(Math.random() * names.length);
+       return names[n];
+   }
 
-    int getRandomScore() {
+    private int getRandomScore() {
         int k = (int) Math.floor(Math.random() * grades.length);
         return grades[k];
     }
@@ -74,7 +74,7 @@ class FactoryStudentTest {
         }
         System.out.println("=====");
         Arrays.stream(students)
-                .map(x -> x.name + " Сергеевич")
+                .map(x -> x.name + " получил(а) итоговый балл 5")
                 .forEach(x -> System.out.println(x));
     }
 

@@ -8,5 +8,6 @@ public class Student {
     public Student(String name, Grade[] grades) {
         this.name = name;
         this.grades = grades;
+
     }
 }

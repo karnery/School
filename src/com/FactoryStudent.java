@@ -15,8 +15,6 @@ public class FactoryStudent {
         }
         return new Student(getRandomName(), grades);
     }
-
-
     Student[] createStudents(int numOfStudents) {
         Student[] students = new Student[numOfStudents];
         for (int i = 0; i <= numOfStudents - 1; i++) {
@@ -45,7 +43,6 @@ public class FactoryStudent {
     }
 
 }
-
 class FactoryStudentTest {
     public static void main(String[] args) {
         FactoryStudent factoryStudent = new FactoryStudent();

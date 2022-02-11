@@ -1,5 +1,7 @@
 package com;
 
+import java.util.Arrays;
+
 class School {
     Student[] students;
 
@@ -16,7 +18,6 @@ class School {
             }
         }
     }
-
     private void showScore(Student student) {
         Grade[] grades = student.grades;
         for (int i = 0; i <= grades.length - 1; i++) {
@@ -24,7 +25,6 @@ class School {
             System.out.println(currentGrade.subjectName + ": " + currentGrade.score);
         }
     }
-
     public void showScoreBySubjectName(String subjectName) {
         for (int i = 0; i <= students.length - 1; i++) {
             Student currentStudent = students[i];
@@ -47,7 +47,6 @@ class School {
             }
         }
     }
-
     private void showAverageScore(Student student) {
         Grade[] grades = student.grades;
         double sumScore = 0;
@@ -58,7 +57,6 @@ class School {
         double avg = sumScore / grades.length;
         System.out.println(avg);
     }
-
     public Grade[] getAllGrades() {
         ListGrades listGrades = new ListGrades();
         for (int i = 0; i < students.length; i++) {
@@ -70,8 +68,18 @@ class School {
         }
         return listGrades.getAllGrades();
     }
-    //   Grade[] allGrades = getAllGrades(students);
-    //       for (int i = 0; i < allGrades.length; i++) {
-    //       Grade currentGrade = allGrades[i];
-    //       System.out.println(i + 1 + ". " + currentGrade.subjectName);
+
+    public void deleteStudent(String name) {
+        Student[] newStudents = new Student[students.length - 1];
+        int j = 0; //индекс нового массива
+        for (int i = 0; i < students.length - 1; i++) {
+            Student currentStudent = students[i];
+            if (currentStudent.name != name) {
+                newStudents[i] = newStudents[j++];
+            }
+        }
+        this.students = newStudents;
+    }
 }
+//
+

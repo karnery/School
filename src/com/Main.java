@@ -21,13 +21,16 @@ class Main {
         Grade[] allGrades = school.getAllGrades();
         for (int i = 0; i < allGrades.length; i++) {
             Grade currentGrade = allGrades[i];
-            System.out.println(i + 1 + ". " + currentGrade.subjectName);
+            // System.out.println(i + 1 + ". " + currentGrade.subjectName);
         }
-        school.showScoreByStudentName("маКс");
+        school.deleteStudent("Макс");
+        school.showScoreByStudentName("Макс");
 
         school.showScoreBySubjectName("Английский язык");
 
-        school.showAverageScoreByStudentName("Макс");
+        school.showAverageScoreByStudentName("Маша");
+
+
     }
 }
 

@@ -11,7 +11,7 @@ class Main {
         students[0] = new Student("Маша", mashaGrades);
 
         Grade[] maxGrades = new Grade[4];
-        maxGrades[0] = new Grade("Биология", 5);
+        maxGrades[0] = new Grade("Математика", 5);
         maxGrades[1] = new Grade("Английский язык", 4);
         maxGrades[2] = new Grade("Физкультура", 3);
         maxGrades[3] = new Grade("Астрономия", 5);
@@ -23,7 +23,7 @@ class Main {
             Grade currentGrade = allGrades[i];
             // System.out.println(i + 1 + ". " + currentGrade.subjectName);
         }
-        school.deleteStudent("Макс");
+
         school.showScoreByStudentName("Макс");
 
         school.showScoreBySubjectName("Английский язык");
